@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clockify-migrate"
+version = "0.2.0"
+description = "Upload Clockify CSV exports into another Clockify account via the API"
+requires-python = ">=3.11"
+dependencies = ["requests>=2.31", "typer>=0.12", "rich"]
+
+[project.scripts]
+clockify-migrate = "clockify_migrate.cli:app"
+
+[tool.setuptools]
+packages = ["clockify_migrate"]

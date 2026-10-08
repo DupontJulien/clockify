@@ -1,0 +1,6 @@
+config.toml
+csv/*.csv
+imported.log
+errors.csv
+__pycache__/
+*.egg-info/

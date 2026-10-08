@@ -1,0 +1,26 @@
+# Configuration de clockify-migrate
+# ⚠️ Ce fichier contient ta clé API : il est dans .gitignore, ne le commit pas.
+
+[clockify]
+# Clé API du NOUVEAU compte (julien.dupont.rochat@gmail.com)
+# Clockify > photo de profil > Profile settings > Advanced > Manage API keys > Generate new
+api_key = "COLLE_TA_CLE_API_ICI"
+
+# Laisser vide = workspace actif du compte. Sinon, l'ID affiché par `clockify-migrate check`
+workspace_id = ""
+
+[import]
+# Fuseau horaire des heures dans les exports
+timezone = "Europe/Zurich"
+
+# N'importer que les lignes de cet e-mail (vide = toutes les lignes)
+old_email = "julien.dupont@cortexia.ch"
+
+# Ordre des dates dans les CSV : "auto", "DMY" (31/12/2026), "MDY" ou "YMD"
+date_order = "DMY"
+
+# Envoyer le flag facturable (mettre false si l'API le refuse sur ton plan)
+send_billable = true
+
+# Fichier qui garde la trace des entrées déjà importées (évite les doublons)
+state_file = "imported.log"

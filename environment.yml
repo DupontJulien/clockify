@@ -1,0 +1,11 @@
+name: clockify-migrate
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - requests>=2.31
+  - typer>=0.12
+  - rich
+  - pip
+  - pip:
+      - -e .
